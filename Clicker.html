@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clicker by singlu66</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    #counter {
+      font-size: 2rem;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>↓TAP TAP↓</h1>
+  <div id="counter">0</div>
+  <button onclick="increment()">Click me!</button>
+
+  <script>
+    let count = 0;
+
+    function increment() {
+      count++;
+      document.getElementById("counter").textContent = count;
+    }
+  </script>
+</body>
+</html>
